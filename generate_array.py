@@ -2,14 +2,11 @@ import array as arr
 import random
 import base64
 
-
-
 firstbyte=bytearray(b'\x15\x04\xA5')
 Firstbyte=random.choice (firstbyte)
 q=bytes([Firstbyte])  
 
 syncbyte=bytearray(b'\xA5') 
-
 
 Lowhi=bytearray(b'\x01\x02')  
 
