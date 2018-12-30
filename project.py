@@ -27,12 +27,12 @@ class check_error:
 
         ser.write(pocketdata)
         x=ser.read(1)
-        ##????????burda cantinue koyarsan ser.read başka bir bytı okur ama serial portta 
+       
         if x==b'\x15':
             print("Negative Acknowledgment.Error occured during data transmission to device.I am sending the datas again... ")
-            #w.pocket_data() gerçek portta burayı kullan??????
+            
         elif x==b'\x04':       
-            print("Host does not have the capability to respond to the request,it only supports a subset of the protocol") #burayı biraz araştır
+            print("Host does not have the capability to respond to the request,it only supports a subset of the protocol")
             
             sys.exit(["device could not make sense of datas which you just sended.Please check your data"])               
             
